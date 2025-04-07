@@ -12,8 +12,7 @@
       <button @click="toastTopEnd" class="btn btn-outline-primary col s12 m3" type="button">toast top end</button>
     </div>
 
-    <a href="https://sweetalert2.github.io" class="doc-link" target="_blank">Sweetalert2 documentation</a>
-  </div>
+    <a :href="docLink" class="doc-link" target="_blank" rel="noopener noreferrer">Sweetalert2 documentation</a >  </div>
 </template>
 
 <script lang="ts">
@@ -23,7 +22,8 @@ export default defineComponent({
   data() {
     return {
       msg: 'Welcome to Vue-Sweetalert2 example',
-      description: 'This is TypeScript component in Vue 3',
+      description: 'This is a TypeScript component in Vue 3',
+      docLink: 'https://sweetalert2.github.io'      
     };
   },
 
